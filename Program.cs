@@ -73,6 +73,9 @@
             students.Add("LEANDRO Luz");
             students.Add("FRANCISCO DIAS");
             students.Add("LEONARDO Andrade");
+
+            //Get Random Value to find student
+            //Este é outro comentário que me tinha esquecido. 
             var random = new Random(DateTime.Now.Millisecond);
             var  index = random.Next(students.Count);
             
@@ -122,8 +125,10 @@
             int teamCount = students.Count / membersPerTeam;
             var teams = new List<String[]>();
 
+            //This for cycle will create as many groups as needed
             for (int i = 0; i < teamCount; i++)
             {
+                //This for cycle will create team composition
                 String[] team = new String[membersPerTeam];
                 for (int j = 0; j < membersPerTeam; j++)
                 {
